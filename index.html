@@ -1,60 +1,117 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl"><head><meta charset="UTF-8">
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>متجر محمد مصطفي</title>
+<title>AFTER N Store</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial}
-body{background:#000;color:#fff;padding:12px}
-.top{text-align:center;background:#050a18;border:2px solid #008cff;border-radius:16px;padding:16px;margin-bottom:12px}
-.top span{color:#008cff}
-.menu{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
-.menu a{background:#050a18;border:2px solid #008cff;color:#fff;border-radius:14px;padding:18px 10px;font-weight:bold;text-decoration:none;text-align:center}
-.t{font-size:19px;margin:18px 0 10px;border-right:4px solid #008cff;padding:10px;background:#0a0f22;border-radius:8px}
-.i{display:flex;justify-content:space-between;align-items:center;background:#0a0f22;border:1px solid #1e4fff;border-radius:12px;padding:13px;margin-bottom:8px}
-.i span{color:#00ff88;font-weight:bold}
-.o{background:#008cff;color:#fff;padding:8px 13px;border-radius:20px;font-weight:bold;text-decoration:none}
-.w{background:#25D366;color:#fff;text-align:center;display:block;padding:13px;border-radius:12px;text-decoration:none;font-weight:bold;margin-top:12px}
-</style></head><body>
-<div class="top"><h1>🔥 متجر <span>محمد مصطفي</span> 🔥</h1><p>شحن سريع - مضمون - 24/7</p><p>📱 01109558863</p></div>
-<div class="menu">
-<a href="#tiktok">🎵<br>تيك توك</a>
-<a href="#insta">📸<br>انستجرام</a>
-<a href="#pubg">🎮<br>شحن ببجي</a>
-<a href="#pes">⚽<br>شحن بيس</a>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,sans-serif}
+body{background:#000 url('bg.jpg') no-repeat center center fixed;background-size:cover;color:#fff}
+.overlay{background:rgba(0,0,0,.45);min-height:100vh;padding-bottom:120px}
+.top{margin:14px;padding:14px 16px;background:rgba(0,0,0,.85);border:1px solid #d4af37;border-radius:18px;display:flex;justify-content:space-between;align-items:center}
+.top b{font-size:25px;color:#e8c96a}
+.pill{border:1px solid #d4af37;padding:6px 12px;border-radius:20px;font-weight:bold}
+.hero{text-align:center;padding:35px 14px 5px}
+.badge{display:inline-block;border:1px solid #d4af37;color:#e8c96a;padding:6px 14px;border-radius:20px;font-size:13px;background:#000}
+.hero h1{font-size:50px;color:#e8c96a;margin:16px 0 8px}
+.hero p{font-size:16px}
+.btn{display:inline-block;margin-top:22px;background:#e8c96a;color:#000;padding:13px 38px;border-radius:12px;font-size:20px;font-weight:bold;text-decoration:none}
+.sec{padding:30px 14px 10px}
+.sec h2{color:#e8c96a;font-size:24px;margin-bottom:14px}
+.wide-card{background:rgba(0,0,0,.88);border:1px solid #d4af37;border-radius:18px;padding:20px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:#fff}
+.wide-card h3{color:#e8c96a;font-size:26px;margin-bottom:8px}
+.wide-card p{font-size:13px;color:#ddd;line-height:1.7}
+.wide-card .icon{font-size:48px;text-align:center;line-height:1.2;min-width:90px}
+.page{display:none;padding:15px}
+.page:target{display:block}
+.page:target ~ .home{display:none}
+.item{background:rgba(0,0,0,.88);border:1px solid #d4af37;border-radius:14px;padding:15px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+.item b{color:#e8c96a}
+.price{color:#00ff88;font-weight:bold;font-size:17px}
+.wa{display:inline-block;background:#25D366;color:#fff;text-decoration:none;padding:8px 14px;border-radius:10px;font-weight:bold;margin-top:6px}
+.back{color:#e8c96a;text-decoration:none;font-weight:bold}
+.nav{position:fixed;bottom:10px;left:10px;right:10px;background:rgba(0,0,0,.92);border:1px solid #d4af37;border-radius:20px;display:flex;justify-content:space-around;padding:12px 5px}
+.nav div{text-align:center;color:#e8c96a;font-size:13px}
+.nav span{font-size:22px;display:block}
+</style>
+</head>
+<body>
+<div class="overlay">
+
+<div id="boost" class="page">
+<a class="back" href="#">⬅ رجوع</a>
+<h2 style="color:#e8c96a;margin:15px 0">📈 تعزيز قناتك</h2>
+<h3 style="margin:12px 0">🎵 تيك توك</h3>
+<div class="item"><div><b>1000 متابع تيك توك</b></div><div><div class="price">100ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 متابع تيك توك ب 100ج">اطلب</a></div></div>
+<div class="item"><div><b>1000 مشاهدة تيك توك</b></div><div><div class="price">10ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 مشاهدة تيك توك ب 10ج">اطلب</a></div></div>
+<div class="item"><div><b>1000 لايك تيك توك</b></div><div><div class="price">30ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 لايك تيك توك ب 30ج">اطلب</a></div></div>
+<h3 style="margin:18px 0 12px">📸 انستا</h3>
+<div class="item"><div><b>1000 متابع انستا</b></div><div><div class="price">250ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 متابع انستا ب 250ج">اطلب</a></div></div>
+<div class="item"><div><b>1000 لايك انستا</b></div><div><div class="price">50ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 لايك انستا ب 50ج">اطلب</a></div></div>
 </div>
-<a class="w" href="https://wa.me/201109558863">اطلب واتساب 💬 01109558863</a>
 
-<h2 class="t" id="tiktok">🎵 تيك توك</h2>
-<div class="i"><div><b>1000 متابع تيك توك</b></div><span>100ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 1000 متابع تيك توك">اطلب</a></div>
-<div class="i"><div><b>1000 مشاهدة تيك توك</b></div><span>10ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 1000 مشاهدة تيك توك">اطلب</a></div>
-<div class="i"><div><b>1000 لايك تيك توك</b></div><span>30ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 1000 لايك تيك توك">اطلب</a></div>
+<div id="pubg" class="page">
+<a class="back" href="#">⬅ رجوع</a>
+<h2 style="color:#e8c96a;margin:15px 0">اشحن ببجي - بالـ ID 🪖</h2>
+<div class="item"><div><b>60 UC</b></div><div><div class="price">55ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 60 UC ب 55ج">اطلب</a></div></div>
+<div class="item"><div><b>120 UC</b></div><div><div class="price">110ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 120 UC ب 110ج">اطلب</a></div></div>
+<div class="item"><div><b>180 UC</b></div><div><div class="price">165ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 180 UC ب 165ج">اطلب</a></div></div>
+<div class="item"><div><b>325 UC</b></div><div><div class="price">255ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 325 UC ب 255ج">اطلب</a></div></div>
+<div class="item"><div><b>385 UC</b></div><div><div class="price">310ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 385 UC ب 310ج">اطلب</a></div></div>
+<div class="item"><div><b>445 UC</b></div><div><div class="price">365ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 445 UC ب 365ج">اطلب</a></div></div>
+<div class="item"><div><b>660 UC</b></div><div><div class="price">500ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 660 UC ب 500ج">اطلب</a></div></div>
+<div class="item"><div><b>720 UC</b></div><div><div class="price">555ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 720 UC ب 555ج">اطلب</a></div></div>
+<div class="item"><div><b>985 UC</b></div><div><div class="price">745ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 985 UC ب 745ج">اطلب</a></div></div>
+<div class="item"><div><b>1045 UC</b></div><div><div class="price">810ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1045 UC ب 810ج">اطلب</a></div></div>
+<div class="item"><div><b>1320 UC</b></div><div><div class="price">1000ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1320 UC ب 1000ج">اطلب</a></div></div>
+<div class="item"><div><b>1800 UC</b></div><div><div class="price">1220ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1800 UC ب 1220ج">اطلب</a></div></div>
+<div class="item"><div><b>2125 UC</b></div><div><div class="price">1555ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 2125 UC ب 1555ج">اطلب</a></div></div>
+<div class="item"><div><b>2460 UC</b></div><div><div class="price">1680ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 2460 UC ب 1680ج">اطلب</a></div></div>
+<div class="item"><div><b>3850 UC</b></div><div><div class="price">2350ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 3850 UC ب 2350ج">اطلب</a></div></div>
+<div class="item"><div><b>5650 UC</b></div><div><div class="price">3600ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 5650 UC ب 3600ج">اطلب</a></div></div>
+<div class="item"><div><b>8100 UC</b></div><div><div class="price">4850ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 8100 UC ب 4850ج">اطلب</a></div></div>
+</div>
 
-<h2 class="t" id="insta">📸 انستجرام</h2>
-<div class="i"><div><b>1000 متابع انستا</b></div><span>250ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 1000 متابع انستا">اطلب</a></div>
-<div class="i"><div><b>1000 لايك انستا</b></div><span>50ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 1000 لايك انستا">اطلب</a></div>
-<h2 class="t" id="pubg">🎮 شحن ببجي</h2>
-<div class="i"><b>60 UC</b><span>55ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 60 UC">اشحن</a></div>
-<div class="i"><b>120 UC</b><span>110ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 120 UC">اشحن</a></div>
-<div class="i"><b>180 UC</b><span>165ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 180 UC">اشحن</a></div>
-<div class="i"><b>325 UC</b><span>255ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 325 UC">اشحن</a></div>
-<div class="i"><b>385 UC</b><span>310ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 385 UC">اشحن</a></div>
-<div class="i"><b>445 UC</b><span>365ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 445 UC">اشحن</a></div>
-<div class="i"><b>660 UC</b><span>500ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 660 UC">اشحن</a></div>
-<div class="i"><b>720 UC</b><span>555ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 720 UC">اشحن</a></div>
-<div class="i"><b>985 UC</b><span>745ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 985 UC">اشحن</a></div>
-<div class="i"><b>1045 UC</b><span>810ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 1045 UC">اشحن</a></div>
-<div class="i"><b>1320 UC</b><span>1000ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 1320 UC">اشحن</a></div>
-<div class="i"><b>1800 UC</b><span>1220ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 1800 UC">اشحن</a></div>
-<div class="i"><b>2125 UC</b><span>1555ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 2125 UC">اشحن</a></div>
-<div class="i"><b>2460 UC</b><span>1680ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 2460 UC">اشحن</a></div>
-<div class="i"><b>3850 UC</b><span>2350ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 3850 UC">اشحن</a></div>
-<div class="i"><b>5650 UC</b><span>3600ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 5650 UC">اشحن</a></div>
-<div class="i"><b>8100 UC</b><span>4850ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 8100 UC">اشحن</a></div>
+<div id="pes" class="page">
+<a class="back" href="#">⬅ رجوع</a>
+<h2 style="color:#e8c96a;margin:15px 0">اشحن بيس ⚽</h2>
+<div class="item"><div><b>500 كوين 🎁</b></div><div><div class="price">180ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 500 كوين بيس ب 180ج">اطلب</a></div></div>
+<div class="item"><div><b>1500 كوين 🎁</b></div><div><div class="price">480ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1500 كوين بيس ب 480ج">اطلب</a></div></div>
+<div class="item"><div><b>4500 كوين 🎁</b></div><div><div class="price">1300ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 4500 كوين بيس ب 1300ج">اطلب</a></div></div>
+</div>
 
-<h2 class="t" id="pes">⚽ شحن بيس</h2>
-<div class="i"><b>🎁 500 Coins</b><span>180ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 500 كوين بيس">اشحن</a></div>
-<div class="i"><b>🎁 1500 Coins</b><span>480ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 1500 كوين بيس">اشحن</a></div>
-<div class="i"><b>🎁 4500 Coins</b><span>1300ج</span><a class="o" href="https://wa.me/201109558863?text=عايز 4500 كوين بيس">اشحن</a></div>
+<div class="home">
+<div class="top"><div class="pill">نورتو ✅</div><b>AFTER N</b></div>
+<div class="hero">
+<span class="badge">🛡️ OFFICIAL STORE</span>
+<h1>AFTER N Store</h1>
+<p>متجرك الموثوق للشحن والتعزيز - سريع • آمن • موثوق</p>
+<a class="btn" href="#boost">تصفح الحسابات</a>
+</div>
+<div class="sec">
+<h2>تصفح الأقسام</h2>
+<a class="wide-card" href="#boost">
+<div><h3>تعزيز قناتك</h3><p>▶️ يوتيوب • 🎵 تيك توك<br>1000 متابع 100ج • 1000 مشاهدة 10ج • 1000 لايك 30ج<br>📸 انستا: 1000 متابع 250ج • 1000 لايك 50ج</p></div>
+<div class="icon">📈<br><span style="font-size:16px">+2.5K</span></div>
+</a>
+<a class="wide-card" href="#pubg">
+<div><h3>اشحن ببجي</h3><p>من 60 لـ 8100 UC - شحن بالـ ID<br>يبدأ من 55ج<br>اضغط لعرض كل الأسعار ⬅</p></div>
+<div class="icon">🪖<br><span style="font-size:16px">🪙 UC</span></div>
+</a>
+<a class="wide-card" href="#pes">
+<div><h3>اشحن بيس</h3><p>500 كوين 180ج • 1500 كوين 480ج • 4500 كوين 1300ج<br>اضغط لعرض الأسعار ⬅</p></div>
+<div class="icon">⚽<br><span style="font-size:16px">🪙 eFootball</span></div>
+</a>
+</div>
+</div>
 
-<a class="w" href="https://wa.me/201109558863">اطلب واتساب 💬 01109558863</a>
-</body></html>
+</div>
+<div class="nav">
+<div><span>🏠</span>الرئيسية</div>
+<div><span>🛍️</span>الحسابات</div>
+<div><span>🎧</span>الدعم</div>
+<div><span>💎</span>VIP</div>
+<div><span>👤</span>حسابي</div>
+</div>
+</body>
+                                                                                                                                                              </html>
