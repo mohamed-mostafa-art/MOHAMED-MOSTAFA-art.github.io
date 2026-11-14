@@ -3,115 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AFTER N Store</title>
+<title>AFTERN Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,sans-serif}
-body{background:#000 url('bg.jpg') no-repeat center center fixed;background-size:cover;color:#fff}
-.overlay{background:rgba(0,0,0,.45);min-height:100vh;padding-bottom:120px}
-.top{margin:14px;padding:14px 16px;background:rgba(0,0,0,.85);border:1px solid #d4af37;border-radius:18px;display:flex;justify-content:space-between;align-items:center}
-.top b{font-size:25px;color:#e8c96a}
-.pill{border:1px solid #d4af37;padding:6px 12px;border-radius:20px;font-weight:bold}
-.hero{text-align:center;padding:35px 14px 5px}
-.badge{display:inline-block;border:1px solid #d4af37;color:#e8c96a;padding:6px 14px;border-radius:20px;font-size:13px;background:#000}
-.hero h1{font-size:50px;color:#e8c96a;margin:16px 0 8px}
-.hero p{font-size:16px}
-.btn{display:inline-block;margin-top:22px;background:#e8c96a;color:#000;padding:13px 38px;border-radius:12px;font-size:20px;font-weight:bold;text-decoration:none}
-.sec{padding:30px 14px 10px}
-.sec h2{color:#e8c96a;font-size:24px;margin-bottom:14px}
-.wide-card{background:rgba(0,0,0,.88);border:1px solid #d4af37;border-radius:18px;padding:20px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;text-decoration:none;color:#fff}
-.wide-card h3{color:#e8c96a;font-size:26px;margin-bottom:8px}
-.wide-card p{font-size:13px;color:#ddd;line-height:1.7}
-.wide-card .icon{font-size:48px;text-align:center;line-height:1.2;min-width:90px}
-.page{display:none;padding:15px}
-.page:target{display:block}
-.page:target ~ .home{display:none}
-.item{background:rgba(0,0,0,.88);border:1px solid #d4af37;border-radius:14px;padding:15px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
-.item b{color:#e8c96a}
-.price{color:#00ff88;font-weight:bold;font-size:17px}
-.wa{display:inline-block;background:#25D366;color:#fff;text-decoration:none;padding:8px 14px;border-radius:10px;font-weight:bold;margin-top:6px}
-.back{color:#e8c96a;text-decoration:none;font-weight:bold}
-.nav{position:fixed;bottom:10px;left:10px;right:10px;background:rgba(0,0,0,.92);border:1px solid #d4af37;border-radius:20px;display:flex;justify-content:space-around;padding:12px 5px}
-.nav div{text-align:center;color:#e8c96a;font-size:13px}
-.nav span{font-size:22px;display:block}
-</style>
-</head>
-<body>
-<div class="overlay">
-
-<div id="boost" class="page">
-<a class="back" href="#">⬅ رجوع</a>
-<h2 style="color:#e8c96a;margin:15px 0">📈 تعزيز قناتك</h2>
-<h3 style="margin:12px 0">🎵 تيك توك</h3>
-<div class="item"><div><b>1000 متابع تيك توك</b></div><div><div class="price">100ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 متابع تيك توك ب 100ج">اطلب</a></div></div>
-<div class="item"><div><b>1000 مشاهدة تيك توك</b></div><div><div class="price">10ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 مشاهدة تيك توك ب 10ج">اطلب</a></div></div>
-<div class="item"><div><b>1000 لايك تيك توك</b></div><div><div class="price">30ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 لايك تيك توك ب 30ج">اطلب</a></div></div>
-<h3 style="margin:18px 0 12px">📸 انستا</h3>
-<div class="item"><div><b>1000 متابع انستا</b></div><div><div class="price">250ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 متابع انستا ب 250ج">اطلب</a></div></div>
-<div class="item"><div><b>1000 لايك انستا</b></div><div><div class="price">50ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1000 لايك انستا ب 50ج">اطلب</a></div></div>
-</div>
-
-<div id="pubg" class="page">
-<a class="back" href="#">⬅ رجوع</a>
-<h2 style="color:#e8c96a;margin:15px 0">اشحن ببجي - بالـ ID 🪖</h2>
-<div class="item"><div><b>60 UC</b></div><div><div class="price">55ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 60 UC ب 55ج">اطلب</a></div></div>
-<div class="item"><div><b>120 UC</b></div><div><div class="price">110ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 120 UC ب 110ج">اطلب</a></div></div>
-<div class="item"><div><b>180 UC</b></div><div><div class="price">165ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 180 UC ب 165ج">اطلب</a></div></div>
-<div class="item"><div><b>325 UC</b></div><div><div class="price">255ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 325 UC ب 255ج">اطلب</a></div></div>
-<div class="item"><div><b>385 UC</b></div><div><div class="price">310ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 385 UC ب 310ج">اطلب</a></div></div>
-<div class="item"><div><b>445 UC</b></div><div><div class="price">365ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 445 UC ب 365ج">اطلب</a></div></div>
-<div class="item"><div><b>660 UC</b></div><div><div class="price">500ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 660 UC ب 500ج">اطلب</a></div></div>
-<div class="item"><div><b>720 UC</b></div><div><div class="price">555ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 720 UC ب 555ج">اطلب</a></div></div>
-<div class="item"><div><b>985 UC</b></div><div><div class="price">745ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 985 UC ب 745ج">اطلب</a></div></div>
-<div class="item"><div><b>1045 UC</b></div><div><div class="price">810ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1045 UC ب 810ج">اطلب</a></div></div>
-<div class="item"><div><b>1320 UC</b></div><div><div class="price">1000ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1320 UC ب 1000ج">اطلب</a></div></div>
-<div class="item"><div><b>1800 UC</b></div><div><div class="price">1220ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1800 UC ب 1220ج">اطلب</a></div></div>
-<div class="item"><div><b>2125 UC</b></div><div><div class="price">1555ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 2125 UC ب 1555ج">اطلب</a></div></div>
-<div class="item"><div><b>2460 UC</b></div><div><div class="price">1680ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 2460 UC ب 1680ج">اطلب</a></div></div>
-<div class="item"><div><b>3850 UC</b></div><div><div class="price">2350ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 3850 UC ب 2350ج">اطلب</a></div></div>
-<div class="item"><div><b>5650 UC</b></div><div><div class="price">3600ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 5650 UC ب 3600ج">اطلب</a></div></div>
-<div class="item"><div><b>8100 UC</b></div><div><div class="price">4850ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 8100 UC ب 4850ج">اطلب</a></div></div>
-</div>
-
-<div id="pes" class="page">
-<a class="back" href="#">⬅ رجوع</a>
-<h2 style="color:#e8c96a;margin:15px 0">اشحن بيس ⚽</h2>
-<div class="item"><div><b>500 كوين 🎁</b></div><div><div class="price">180ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 500 كوين بيس ب 180ج">اطلب</a></div></div>
-<div class="item"><div><b>1500 كوين 🎁</b></div><div><div class="price">480ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 1500 كوين بيس ب 480ج">اطلب</a></div></div>
-<div class="item"><div><b>4500 كوين 🎁</b></div><div><div class="price">1300ج</div><a class="wa" href="https://wa.me/201109558863?text=عايز 4500 كوين بيس ب 1300ج">اطلب</a></div></div>
-</div>
-
-<div class="home">
-<div class="top"><div class="pill">نورتو ✅</div><b>AFTER N</b></div>
-<div class="hero">
-<span class="badge">🛡️ OFFICIAL STORE</span>
-<h1>AFTER N Store</h1>
-<p>متجرك الموثوق للشحن والتعزيز - سريع • آمن • موثوق</p>
-<a class="btn" href="#boost">تصفح الحسابات</a>
-</div>
-<div class="sec">
-<h2>تصفح الأقسام</h2>
-<a class="wide-card" href="#boost">
-<div><h3>تعزيز قناتك</h3><p>▶️ يوتيوب • 🎵 تيك توك<br>1000 متابع 100ج • 1000 مشاهدة 10ج • 1000 لايك 30ج<br>📸 انستا: 1000 متابع 250ج • 1000 لايك 50ج</p></div>
-<div class="icon">📈<br><span style="font-size:16px">+2.5K</span></div>
-</a>
-<a class="wide-card" href="#pubg">
-<div><h3>اشحن ببجي</h3><p>من 60 لـ 8100 UC - شحن بالـ ID<br>يبدأ من 55ج<br>اضغط لعرض كل الأسعار ⬅</p></div>
-<div class="icon">🪖<br><span style="font-size:16px">🪙 UC</span></div>
-</a>
-<a class="wide-card" href="#pes">
-<div><h3>اشحن بيس</h3><p>500 كوين 180ج • 1500 كوين 480ج • 4500 كوين 1300ج<br>اضغط لعرض الأسعار ⬅</p></div>
-<div class="icon">⚽<br><span style="font-size:16px">🪙 eFootball</span></div>
-</a>
-</div>
-</div>
-
-</div>
-<div class="nav">
-<div><span>🏠</span>الرئيسية</div>
-<div><span>🛍️</span>الحسابات</div>
-<div><span>🎧</span>الدعم</div>
-<div><span>💎</span>VIP</div>
-<div><span>👤</span>حسابي</div>
-</div>
-</body>
-                                                                                                                                                              </html>
+  :root {
+    --bg: #0c0b08;
+    --card: #16140f;
+    --gold: #e0b341;
+    --gold-light: #f5d376;
+    --border: rgba(224, 179, 65, 0.25);
+  }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; -webkit-tap-highlight-color: transparent; }
+  body { background: var(--bg); color: #fff; padding-bottom: 95px; overflow-x: hidden; }
+  .top-header { padding: 14px 18px 8px; display: flex; justify-content: space-between; align-items: flex-start; }
+  .store-status { background: #171510; border: 1px solid var(--border); padding: 5px 12px; border-radius: 20px; font-size: 12px; color: var(--gold-light); display: flex; align-items: center; gap: 6px; }
+  .status-dot { width: 7px; height: 7px; background: var(--gold); border-radius: 50%; box-shadow: 0 0 8px var(--gold); }
+  .brand-side { text-align: left; display: flex; flex-direction: column; align-items: flex-end; }
+  .brand-row { display: flex; align-items: center; gap: 8px; }
+  .brand-name { font-size: 18px; font-weight: 900; letter-spacing: 0.5px; color: #fff; }
+  .brand-sub { font-size: 11px; color: #8c877a; margin-top: -2px; }
+  .brand-badge-icon { width: 32px; height: 32px; background: #1c1912; border: 1px solid var(--border); border-radius: 9px; display: flex; align-items: center; justify-content: center; color: var(--gold); font-weight: 900; font-size: 16px; }
+  .welcome-pill-wrap { padding: 4px 18px 14px; display: flex; justify-content: flex-start; }
+  .welcome-pill { background: #191610; border: 1px solid var(--border); padding: 6px 14px; border-radius: 22px; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: var(--gold-light); }
+  .verify-icon { color: #2daae1; font-size: 15px; }
+  .hero-wrap { padding: 0 18px; }
+  .hero-box {
+    position: relative; height: 360px; border-radius: 26px; overflow: hidden;
+    border: 1px solid rgba(224, 179, 65, 0.35);
+    background: #14120d url('https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=900&q=80') center/cover no-repeat;
+    display: flex; flex-direction: column; justify-content: flex-end; padding: 22px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+  }
+  .hero-shade { position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,11,8,0.98) 12%, rgba(12,11,8,0.55) 55%, rgba(12,11,8,0.15) 100%); z-index: 1; }
+  .hero-corner { position: absolute; bottom: 18px; left: 18px; width: 45px; height: 45px; border-bottom: 2px solid rgba(224,179,65,0.45); border-left: 2px solid rgba(224,179,65,0.45); border-bottom-left-radius: 16px; z-index: 2; pointer-events: none; }
+  .hero-inner { position: relative; z-index: 3; text-align: left; }
+  .official-tag { display: inline-block; background: rgba(224, 179, 65, 0.22); border: 1px solid rgba(224, 179, 65, 0.45); color: var(--gold-light); font-size: 10px; font-weight: 800; padding: 3px 12px; border-radius: 6px; letter-spacing: 1.5px; margin-bottom: 8px; }
+  .hero-title { font-size: 27px; font-weight: 900; color: #fff; line-height: 1.2; margin-bottom: 6px; }
+  .hero-desc { font-size: 12.5px; color: #c7c2b6; margin-bottom: 16px; text-align: right; }
+  .hero-cta {
+    width: 100%; background: linear-gradient(90deg, #cfa032, #f0cb65); color: #0c0b08;
+    border: none; padding: 13px 18px; border-radius: 14px; font-size: 15px; font-weight: 800;
+    cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;
+    box-shadow: 0 6px 20px rgba(224, 179, 65, 0.35); transition: 0.2s;
+  }
+  .hero-cta:active { transform: scale(0.97); }
+  .sec-head { padding: 22px 18px 12px; display: flex; justify-content: space-between; align-items: center; }
+  .sec-head h2 { font-size: 16px; font-weight: 800; color: var(--gold-light); display: flex; align-items: center; gap: 6px; }
+  .sec-head h2 span { color: var(--gold); font-size: 12px; }
+  .sec-head p { font-size: 11.5px; color: #7d786c; }
+  .cats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 0 18px; }
+  .cat-box {
+    background: linear-gradient(180deg, #191610 0%, #110f0b 100%);
+    border: 1px solid var(--border); border-radius: 18px; padding: 16px 8px;
+    text-align: center; cursor: pointer; transition: 0.25s; position: relative;
+  }
+  .cat-box.active { border-color: var(--gold); background: linear-gradient(180deg, #241f14 0%, #14120c 100%); box-shadow: 0 6px 18px rgba(224,179,65,0.18); transform: translateY(-2px); }
+  .cat-icon-box { width: 46px; height: 46px; margin: 0 auto 10px; border-radius: 14px; background: rgba(224,179,65,0.12); display: flex; align-items: center; justify-content: center; font-size: 22px; color: var(--gold-light); }
+  .cat-box.active .cat-icon-box { background: var(--gold); color: #0c0b08; }
+  .cat-title { font-size: 13px; font-weight: 800; color: var(--gold-light); margin-bottom: 3px; }
+  .cat-sub { font-size: 10px; color: #8c877a; line-height: 1.3; }
+  .panel-wrap { padding: 18px; }
+  .panel { display: none; animation: fadeIn 0.25s ease; }
+  .panel.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  .sub-filter { display: flex; gap: 10px; margin-bottom: 14px; background: #14120d; padding: 5px; border-radius: 14px; border: 1px solid var(--border); }
+  .filter-btn { flex: 1; padding: 9px; border: none; border-radius: 10px; background: transparent; color: #999; font-size: 13px; font-weight: 700; cursor: pointer; transition: 0.2s; }
+  .filter-btn.active { background: var(--gold); color: #0c0b08; }
+  .sub-list { display: none; }
+  .sub-list.active { display: block; }
+  .pkg-item {
+    background: var(--card); border: 1px solid rgba(224,179,65,0.18); border-radius: 15px;
+    padding: 13px 15px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;
+    cursor: pointer; transition: 0.2s;
+  }
+  .pkg-item:active { transform: scale(0.98); border-color: var(--gold); }
+  .pkg-right h4 { font-size: 14.5px; font-weight: 800; color: #fff; margin-bottom: 2px; }
+  .pkg-right span { font-size: 11px; color: #8c877a; }
+  .pkg-left { display: flex; align-items: center; gap: 8px; }
+  .pkg-price { background: rgba(224,179,65,0.14); border: 1px solid rgba(224,179,65,0.35); color: var(--gold-light); font-weight: 800; font-size: 14px; padding: 6px 12px; border-radius: 10px; }
+  .order-arrow { color: var(--gold); font-size: 13px; }
+  .bottom-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; height: 72px;
+    background: rgba(16, 14, 10, 0.96); backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border); display: flex; justify-content: space-around; align-items: center; z-index: 900;
+  }
+  .b-nav { flex: 1; text-align: center; color: #7a7568; font-size: 11px; font-weight: 700; cursor: pointer; padding: 6px 0; transition: 0.2s; }
+  .b-nav i { display: block; font-size: 19px; margin-bottom: 4px; }
+  .b-nav.active { color: var(--gold-light); }
+  .b-nav.active i { color: var(--gold); text-shadow: 0 0 12px rgba(224,179,65,0.6); }
+  .modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,0.82); backdrop-filter: blur(5px); display: none; align-items: center; justify-content: center; padding: 20px; z-index: 2000; }
+  .modal-bg.open { display: flex; }
+  .modal-box { background: #17140e; border: 1px solid var(--gold); border-radius: 22px; width: 100%; max-width: 360px; padding: 22px; text-align: center; box-shadow: 0 15px 40px rgba(0,0,0,0.8); }
+  .modal-title { font-size: 18px; font-weight: 900; color: var(--gold-light); margin-bottom: 6px; }
+  .modal-pkg { background: rgba(224,179,65,0.12); padding: 8px 12px; border-radius: 10px; font-size: 13px; color: #fff; margin
